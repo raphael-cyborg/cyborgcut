@@ -20,9 +20,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # setup-ffmpeg só tem build x64; o runner do Mac hoje é arm64, então lá vai pelo Homebrew
       - uses: FedericoCarboni/setup-ffmpeg@v3
+        if: runner.os != 'macOS'
         with:
           ffmpeg-version: release
+
+      - name: ffmpeg (Homebrew)
+        if: runner.os == 'macOS'
+        run: brew install ffmpeg
 
       - uses: astral-sh/setup-uv@v5
         with:
@@ -30,7 +36,7 @@ jobs:
 
       - name: ambiente
         run: |
-          uv venv
+          uv venv --clear
           uv pip install -e ".[cpu,dev]"
 
       - name: doctor

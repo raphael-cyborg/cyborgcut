@@ -1,0 +1,21 @@
+[project]
+name = "cyborgcut"
+version = "0.1.0"
+description = "Skill de agente que edita vídeo a partir do roteiro: corte por palavra, imagem de apoio, gráficos por capítulo e conferência automática. Só Python e ffmpeg."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.26",
+    "pillow>=10.2",
+    "soundfile>=0.12",
+]
+
+[project.optional-dependencies]
+# Transcrição. Um dos dois basta; o `doctor` diz qual a máquina usa.
+mac = ["mlx-whisper>=0.4"]          # Apple Silicon: roda no chip de vídeo
+cpu = ["faster-whisper>=1.1", "av<19", "onnxruntime<1.29"]  # qualquer máquina, processador (ou CUDA)
+dev = ["pytest>=8"]
+
+[tool.setuptools]
+py-modules = []

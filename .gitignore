@@ -1,0 +1,18 @@
+# ambiente
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+
+# o que a skill gera dentro de um projeto
+trabalho/
+saida/
+
+# projetos de cliente usados pra testar localmente: nunca sobem
+exemplos-locais/
+
+# vídeo da demo: baixado pelo script, não versionado
+demo/bruto/*.mp4
+demo/bruto/*.mov
+*.egg-info/

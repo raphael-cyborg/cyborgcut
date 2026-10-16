@@ -1,0 +1,8 @@
+{
+  "base": "agencia",
+  "fonte_titulo": "oswald",
+  "legenda": "karaoke-caixa",
+  "painel": "blocos-cor",
+  "tag": "bloco-cor",
+  "cartao_final": "cor-solida"
+}

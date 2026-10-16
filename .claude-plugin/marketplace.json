@@ -1,0 +1,15 @@
+{
+  "name": "cyborgcut",
+  "description": "CyborgCut: o agente edita o vídeo a partir do roteiro.",
+  "owner": {
+    "name": "Raphael Martins",
+    "url": "https://github.com/raphael-cyborg"
+  },
+  "plugins": [
+    {
+      "name": "cyborgcut",
+      "source": "./",
+      "description": "Edita vídeo a partir do roteiro: corte por palavra, apoio, gráficos, legenda, conferência. Python e ffmpeg."
+    }
+  ]
+}

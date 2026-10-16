@@ -1,0 +1,75 @@
+{
+  "titulo": "fixture",
+  "idioma": "pt",
+  "estilo": "agencia",
+  "formato": "9:16",
+  "fps": 24,
+  "trilha": "lofi-calma",
+  "centro": [
+    0.35,
+    0.5
+  ],
+  "marca": {
+    "nome": "Fixture",
+    "destaque": "#3FA9F5",
+    "logo": null,
+    "rodape": "TESTE DE PONTA A PONTA"
+  },
+  "falas": [
+    {
+      "id": "f1",
+      "take": "take-01",
+      "de": "neste",
+      "ate": "marcas",
+      "enquadramento": "aberto"
+    }
+  ],
+  "apoios": [],
+  "capitulos": [
+    {
+      "fala": "f1",
+      "numero": "01",
+      "nome": "TESTE"
+    }
+  ],
+  "pecas": [
+    {
+      "tipo": "titulo",
+      "fala": "f1",
+      "ate": "que",
+      "linhas": [
+        [
+          "Pequenas empresas,",
+          "branco"
+        ],
+        [
+          "grandes marcas.",
+          "destaque"
+        ]
+      ]
+    },
+    {
+      "tipo": "botao",
+      "fala": "f1",
+      "de": "grandes",
+      "toque": "marcas",
+      "texto": "Saiba mais"
+    }
+  ],
+  "destaques": [
+    "pequenas",
+    "grandes",
+    "marcas"
+  ],
+  "cartao_final": {
+    "linhas": [
+      [
+        "Fim do teste.",
+        "branco"
+      ]
+    ],
+    "duracao": 1.5
+  },
+  "recorte": "caixa",
+  "pecas_y": 280
+}

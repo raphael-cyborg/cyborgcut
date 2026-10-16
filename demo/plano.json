@@ -1,0 +1,253 @@
+{
+  "titulo": "pequenas-empresas-grandes-marcas",
+  "idioma": "pt",
+  "estilo": "agencia",
+  "formato": "9:16",
+  "trilha": "lofi-calma",
+  "centro": [
+    0.35,
+    0.5
+  ],
+  "marca": {
+    "nome": "Multivias",
+    "destaque": "#3FA9F5",
+    "logo": null,
+    "rodape": "COMENTA SUAS DÚVIDAS  ·  NOVO TÓPICO TODA SEMANA"
+  },
+  "falas": [
+    {
+      "id": "f1",
+      "take": "multiviascom-grandes-marcas",
+      "de": "existe",
+      "ate": "propósito",
+      "enquadramento": "aberto"
+    },
+    {
+      "id": "f2",
+      "take": "multiviascom-grandes-marcas",
+      "de": "você",
+      "ate": "coisa",
+      "enquadramento": "medio"
+    },
+    {
+      "id": "f3",
+      "take": "multiviascom-grandes-marcas",
+      "de": "definir",
+      "ate": "for",
+      "enquadramento": "aberto"
+    },
+    {
+      "id": "f4",
+      "take": "multiviascom-grandes-marcas",
+      "de": "e",
+      "ate": "diferenciada",
+      "n_de": 4,
+      "enquadramento": "medio"
+    },
+    {
+      "id": "f5",
+      "take": "multiviascom-grandes-marcas",
+      "de": "e",
+      "ate": "juntas",
+      "n_de": 5,
+      "enquadramento": "aberto"
+    },
+    {
+      "id": "f6",
+      "take": "multiviascom-grandes-marcas",
+      "de": "técnicas",
+      "ate": "marca",
+      "enquadramento": "medio"
+    },
+    {
+      "id": "f7",
+      "take": "multiviascom-grandes-marcas",
+      "de": "e",
+      "ate": "disso",
+      "n_de": 8,
+      "enquadramento": "fechado"
+    }
+  ],
+  "apoios": [],
+  "capitulos": [
+    {
+      "fala": "f1",
+      "numero": "01",
+      "nome": "PROPÓSITO"
+    },
+    {
+      "fala": "f2",
+      "numero": "02",
+      "nome": "A SENSAÇÃO"
+    },
+    {
+      "fala": "f3",
+      "numero": "03",
+      "nome": "POSICIONAMENTO"
+    },
+    {
+      "fala": "f5",
+      "numero": "04",
+      "nome": "O MÉTODO"
+    },
+    {
+      "fala": "f6",
+      "numero": "05",
+      "nome": "O CANAL"
+    },
+    {
+      "fala": "f7",
+      "numero": "06",
+      "nome": "PARTICIPE"
+    }
+  ],
+  "pecas": [
+    {
+      "tipo": "titulo",
+      "fala": "f1",
+      "ate": "contas",
+      "linhas": [
+        [
+          "Pequenas empresas,",
+          "branco"
+        ],
+        [
+          "grandes marcas.",
+          "destaque"
+        ]
+      ]
+    },
+    {
+      "tipo": "etiquetas",
+      "fala": "f2",
+      "de": "trabalhar",
+      "ate": "serviço",
+      "titulo": "Está tudo em dia",
+      "itens": [
+        [
+          "Trabalhar",
+          "trabalhar"
+        ],
+        [
+          "Se manter",
+          "manter"
+        ],
+        [
+          "Bom serviço",
+          "serviço"
+        ]
+      ]
+    },
+    {
+      "tipo": "texto",
+      "fala": "f2",
+      "de": "faltando",
+      "ate": "fim",
+      "linhas": [
+        [
+          "Falta alguma coisa.",
+          "destaque"
+        ]
+      ],
+      "y": 470
+    },
+    {
+      "tipo": "etiquetas",
+      "fala": "f3",
+      "de": "conectar",
+      "ate": "fim",
+      "titulo": "Se conectar com quem pensa igual",
+      "itens": [
+        [
+          "Cliente",
+          "cliente"
+        ],
+        [
+          "Colaborador",
+          "colaborador"
+        ],
+        [
+          "Público",
+          "público"
+        ]
+      ]
+    },
+    {
+      "tipo": "ondas",
+      "fala": "f5",
+      "de": "principal",
+      "ate": "fim",
+      "rotulos": [
+        "Gestão",
+        "Comunicação"
+      ],
+      "palavra_a": "gestão",
+      "palavra_b": "comunicação",
+      "une": "juntas",
+      "texto_uniao": "Juntas"
+    },
+    {
+      "tipo": "checklist",
+      "fala": "f6",
+      "ate": "formas",
+      "itens": [
+        [
+          "Técnicas",
+          "técnicas"
+        ],
+        [
+          "Cases",
+          "cases"
+        ],
+        [
+          "Dicas",
+          "dicas"
+        ]
+      ]
+    },
+    {
+      "tipo": "botao",
+      "fala": "f7",
+      "de": "convido",
+      "toque": "comentários",
+      "texto": "Comenta aqui"
+    }
+  ],
+  "destaques": [
+    "propósito",
+    "faltando",
+    "posicionamento",
+    "conectar",
+    "pequena",
+    "grande",
+    "única",
+    "valiosa",
+    "diferenciada",
+    "gestão",
+    "comunicação",
+    "juntas",
+    "técnicas",
+    "cases",
+    "dicas",
+    "comentários"
+  ],
+  "riscar": [],
+  "correcoes": {},
+  "cartao_final": {
+    "linhas": [
+      [
+        "Pequenas empresas,",
+        "branco"
+      ],
+      [
+        "grandes marcas.",
+        "destaque"
+      ]
+    ],
+    "duracao": 3.2
+  },
+  "pecas_y": 280,
+  "recorte": "caixa",
+  "caixa_largura": 1000,
+  "caixa_y": 700
+}

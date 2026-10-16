@@ -1,0 +1,14 @@
+{
+  "name": "cyborgcut",
+  "version": "0.1.0",
+  "description": "O agente edita o vídeo a partir do roteiro: corte por palavra, imagem de apoio, gráficos por capítulo, legenda, trilha e conferência automática. Só Python e ffmpeg.",
+  "author": {
+    "name": "Raphael Martins",
+    "url": "https://instagram.com/raphael.cyborg"
+  },
+  "homepage": "https://github.com/raphael-cyborg/cyborgcut",
+  "repository": "https://github.com/raphael-cyborg/cyborgcut",
+  "license": "MIT",
+  "keywords": ["video", "edição", "reel", "roteiro", "ffmpeg", "talking-head", "b-roll", "captions"],
+  "skills": ["./"]
+}

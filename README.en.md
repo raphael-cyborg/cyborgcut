@@ -30,6 +30,26 @@ cutter does.
 | Graphics | none or generic | title, checklist, counter, steps, waves, button, per chapter |
 | QA | none | re-transcribes, scans for black frames and flashes, measures loudness |
 
+## Try it without coding
+
+You need an Apple Silicon Mac (2020 or newer) or a Windows PC, and the Claude app on a paid plan
+(Pro or Max).
+
+1. Get the app at [claude.ai/download](https://claude.ai/download), sign in and open the **Code** tab.
+2. Make a folder for the video with two things in it: a folder named `bruto` with the clips as they
+   came off the camera, and the script in whatever form you have it (doc, PDF, plain text).
+3. In Claude, pick that folder and paste:
+
+   > Install the skill from GitHub raphael-cyborg/cyborgcut so I can use it in any folder, set up my
+   > computer for it, and edit the video in this folder following the script. Before the final
+   > render, show me the style mural so I can pick the look.
+
+The first time it installs a few tools and downloads the speech model (2 to 3 GB), and it will ask
+you to approve some steps. On a Mac, if a tool is missing, it may ask you to paste one command into
+Terminal and type your computer password once. After that, each new video is just the folder and the
+sentence. The video never leaves your computer: speech is transcribed locally, and Claude only reads
+the text and a few thumbnails to decide the cuts.
+
 ## Install
 
 Any agent (goes to `~/.claude/skills/`, `.codex/skills/`, …):
@@ -37,6 +57,9 @@ Any agent (goes to `~/.claude/skills/`, `.codex/skills/`, …):
 ```bash
 npx skills add raphael-cyborg/cyborgcut
 ```
+
+No Node (no `npx`): download the [zip](https://github.com/raphael-cyborg/cyborgcut/archive/refs/heads/main.zip)
+and unpack it as `~/.claude/skills/cyborgcut/`.
 
 Claude Code as a plugin:
 

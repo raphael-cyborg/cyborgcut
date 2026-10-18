@@ -22,6 +22,29 @@ Responda ao usuário na língua dele. Os arquivos da skill estão em português.
 - O usuário manda vídeos brutos e um texto do que o vídeo tem que dizer (roteiro, copy, briefing).
 - Não serve pra: cortar silêncio de aula longa sem roteiro, gerar vídeo do zero, legenda avulsa.
 
+## Primeira vez nesta máquina
+
+A pasta da skill é a pasta deste `SKILL.md` (em geral `~/.claude/skills/cyborgcut/`). Os scripts
+rodam com um Python próprio, num ambiente dentro dela; o vídeo do usuário fica em outra pasta.
+Se `<skill>/.venv` ainda não existe, prepare tudo antes de qualquer outra coisa:
+
+1. `uv` (instala Python sem pedir senha), se `uv --version` falhar:
+   Mac/Linux `curl -LsSf https://astral.sh/uv/install.sh | sh` ·
+   Windows `powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"`.
+2. O ambiente, dentro da pasta da skill:
+   `uv venv && uv pip install -e ".[mac]"` (Mac com chip Apple) ou `".[cpu]"` (Windows, Linux, Mac Intel).
+3. `ffmpeg` 5+, se faltar: Mac `brew install ffmpeg`; Windows `winget install Gyan.FFmpeg`
+   (depois, abra um terminal novo pra ele aparecer); Linux `sudo apt install ffmpeg`.
+   **Mac sem Homebrew:** a instalação do Homebrew pede a senha do computador e você não consegue
+   digitar senha. Peça ao usuário, em uma frase, pra abrir o app Terminal, colar o comando do
+   [brew.sh](https://brew.sh) e digitar a senha; depois continue você.
+4. `doctor` até sair "tudo pronto". Avise o usuário que o primeiro vídeo baixa o modelo de fala
+   (2 a 3 GB) e por isso demora mais.
+
+Daqui pra baixo, `python scripts/cyborgcut.py` é atalho de
+`<skill>/.venv/bin/python <skill>/scripts/cyborgcut.py` (Windows: `<skill>\.venv\Scripts\python.exe`),
+chamado de qualquer pasta, com o caminho do projeto do usuário como argumento.
+
 ## O fluxo
 
 ```
@@ -49,6 +72,10 @@ meu-video/
   roteiro.md    o que o vídeo tem que dizer (copy, briefing, roteiro da agência)
   logo.png      opcional, com transparência
 ```
+
+Chegou diferente? Arrume antes de preparar, sem perguntar: vídeos soltos na pasta vão pra
+`bruto/`; roteiro em `.docx`, `.pdf`, `.txt` ou colado na conversa vira `roteiro.md` (o texto
+inteiro, sem resumir).
 
 ```bash
 python scripts/cyborgcut.py preparar meu-video
